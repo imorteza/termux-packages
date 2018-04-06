@@ -1,5 +1,5 @@
 --- myman-wip-2009-10-30/Makefile	2009-10-30 23:34:53.000000000 +0530
-+++ Makefile	2018-04-06 18:00:00.000000000 +0530
++++ Makefile	2018-04-06 18:15:39.000000000 +0530
 @@ -2176,7 +2176,7 @@
  # curses library
  
@@ -9,7 +9,7 @@
  #CURSESINCLUDE = -I/usr/include/ncurses
  # same, in /usr/local (not neccessarily as <curses.h> / -lcurses)
  #CURSESLIBS = -L/usr/local/lib -lncurses
-@@ -3252,7 +3252,7 @@
+@@ -3252,12 +3252,12 @@
  	@${MAKE} ${MAKELOOP} \
              sanity_return=0 \
              _sanity0$X
@@ -18,3 +18,9 @@
  	@${REMOVE} $(call q,${obj}_sanity0.c) _sanity0 $(call q,${obj}_sanity0$O)
  	@${MAKE} ${MAKELOOP} \
              sanity_return=1 \
+             _sanity1$X
+-	@( ./_sanity1 && exit 1 || : )
++	#@( ./_sanity1 && exit 1 || : )
+ 	@${REMOVE} $(call q,${obj}_sanity1.c) _sanity1 $(call q,${obj}_sanity1$O)
+ 	@${ECHOLINEX} your compiler appears to work, so creating $(call q,$@)
+ 	@${ECHOLINEX} You may safely remove this file with \`$(call q,${REMOVE} $@)\'. > $(call q,$@)
