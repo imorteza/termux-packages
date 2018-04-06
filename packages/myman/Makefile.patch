@@ -1,5 +1,5 @@
 --- myman-wip-2009-10-30/Makefile	2009-10-30 23:34:53.000000000 +0530
-+++ Makefile	2018-04-06 16:19:22.000000000 +0530
++++ Makefile	2018-04-06 18:00:00.000000000 +0530
 @@ -2176,7 +2176,7 @@
  # curses library
  
@@ -9,3 +9,12 @@
  #CURSESINCLUDE = -I/usr/include/ncurses
  # same, in /usr/local (not neccessarily as <curses.h> / -lcurses)
  #CURSESLIBS = -L/usr/local/lib -lncurses
+@@ -3252,7 +3252,7 @@
+ 	@${MAKE} ${MAKELOOP} \
+             sanity_return=0 \
+             _sanity0$X
+-	@ ./_sanity0
++	#@ ./_sanity0
+ 	@${REMOVE} $(call q,${obj}_sanity0.c) _sanity0 $(call q,${obj}_sanity0$O)
+ 	@${MAKE} ${MAKELOOP} \
+             sanity_return=1 \
