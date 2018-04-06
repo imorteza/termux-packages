@@ -1,0 +1,11 @@
+--- myman-wip-2009-10-30/Makefile	2009-10-30 23:34:53.000000000 +0530
++++ Makefile	2018-04-06 16:19:22.000000000 +0530
+@@ -2176,7 +2176,7 @@
+ # curses library
+ 
+ # ncurses under Linux, installed in /usr (not neccessarily as <curses.h> / -lcurses)
+-#CURSESLIBS = -L/usr/lib -lncurses
++CURSESLIBS = -L/data/data/com.termux/files/usr/lib -lncurses
+ #CURSESINCLUDE = -I/usr/include/ncurses
+ # same, in /usr/local (not neccessarily as <curses.h> / -lcurses)
+ #CURSESLIBS = -L/usr/local/lib -lncurses
