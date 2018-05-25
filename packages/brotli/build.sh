@@ -1,6 +1,6 @@
 TERMUX_PKG_HOMEPAGE=https://github.com/google/brotli
 TERMUX_PKG_DESCRIPTION="Brotli compression library"
-TERMUX_PKG_VERSION=1.04
+TERMUX_PKG_VERSION=1.0.4
 TERMUX_PKG_MAINTAINER="lokesh @hax4us"
 #TERMUX_PKG_DEPENDS
 #TERMUX_PKG_BUILD_DEPENDS="pkg-config, gettext"
