@@ -7,6 +7,6 @@ TERMUX_PKG_MAINTAINER="lokesh @hax4us"
 TERMUX_PKG_SHA256=2268a3dff1cc36e18549e89a51ee0cd9513908a977d56d6a1f9d4c61c2af37c3
 TERMUX_PKG_SRCURL=https://github.com/google/brotli/archive/v${TERMUX_PKG_VERSION}.tar.gz
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS=" --enable-static=no"
-termux_pkg_pre_configure () {
+termux_step_pre_configure () {
  ./bootstrap
 }
