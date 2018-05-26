@@ -18,6 +18,5 @@ termux_step_pre_configure() {
 	mkdir -p $TERMUX_PKG_BUILDDIR/src/
 	cp $TERMUX_PKG_HOSTBUILD_DIR/src/stage1flex $TERMUX_PKG_BUILDDIR/src/stage1flex
 	touch -d "next hour" $TERMUX_PKG_BUILDDIR/src/stage1flex
-#        apt-get install autopoint gettext 
         rm aclocal.m4 && ./autogen.sh
 }
